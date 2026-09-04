@@ -1,0 +1,59 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+@mixin prompt-box($accent-color, $bg-alpha: 0.10, $border-alpha: 0.5) {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba($accent-color, $border-alpha);
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  background-color: rgba($accent-color, $bg-alpha);
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--language-border-color) 1px 1px 2px 1px;
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+blockquote.prompt-definition {
+  @include prompt-box(#388bfd);
+}
+
+blockquote.prompt-statement {
+  @include prompt-box(#f0883e);
+}
+
+blockquote.prompt-proof {
+  @include prompt-box(#3fb950);
+}
+
+blockquote.prompt-notebox {
+  @include prompt-box(#8b949e);
+}
+
+blockquote.prompt-noteframe {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 1rem;
+  padding: 0rem 1rem;
+  border: 1px solid var(--text-color);
+  border-radius: 0.5rem;
+  text-align: center;
+  color: var(--text-color);
+  background-color: transparent;
+}
