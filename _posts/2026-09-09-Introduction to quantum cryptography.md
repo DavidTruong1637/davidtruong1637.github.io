@@ -471,7 +471,7 @@ $|\Phi^+\rangle$, which consists of two qubits, shared between Alice and Bob. Wh
 
 That is, if Alice and Bob both agree to measure in the computational basis, any outcome Alice obtains will instantly match Bob's result.
 
-More importantly, this agreement holds for any *arbitrary* basis: as long as Alice and Bob measure in the same basis, their outcomes remain identical. This feature is known as $\textcolor{red}{\text{perfect correlation}}$ in a quantum communication channel between Alice and Bob.
+More importantly, this agreement holds for any *arbitrary* real basis: as long as Alice and Bob measure in the same basis, their outcomes remain identical. This feature is known as $\textcolor{#0ea5e9}{\text{perfect correlation}}$ in a quantum communication channel between Alice and Bob.
 
 The following theorem formalizes this property.
 
@@ -787,14 +787,15 @@ That is, any measurement on $A$ yields a uniform outcome distribution. This is k
 
 It means that although A and B share an entangled state, <u>A cannot extract any information about B's state or actions <b>without any classical communication</b></u>. Whichever basis A chooses to measure, her outcome is *completely random*. Furthermore, without a prior agreement on the measurement basis, A cannot be sure whether B uses the same basis, and so cannot confirm if their outcomes match. This lack of information prevents A from knowing B's measurement result with certainty, reducing her prediction to a random guess.
 
-This constraint of quantum communication is formalised as the **no-communication theorem** (also referred to as the **no-signaling** principle). It preserves the principle of causality in quantum mechanics and ensures that information transfer does not violate Einstein's theory of special relativity: *"no signal or information can travel faster than the speed of light in a vacuum"*.
+This constraint of quantum communication is formalised as the 
+$$\textcolor{#0ea5e9}{\text{no-communication theorem}}$$ (also referred to as the $$\textcolor{#0ea5e9}{\text{no-signaling}}$$ principle). It preserves the principle of causality in quantum mechanics and ensures that information transfer does not violate Einstein's theory of special relativity: *"no signal or information can travel faster than the speed of light in a vacuum"*.
 
 > **Key Takeaways:** Perfect correlation & No-signaling
 <br>
-- **Perfect correlation:**
-  - *Mechanism:* When an entangled pair is measured in the *same* basis on both sides, the two outcomes are perfectly correlated. Each individual outcome is still random, but knowing one instantly determines the other, and this holds for *any* shared real basis, not just one fixed choice.
-  - **Application:** Serves as the functional resource enabling practical protocols, including Quantum Key Distribution (E91), Quantum Teleportation, and Superdense Coding.
-- **No-Signaling Principle:**
-  - **Mechanism:** Prohibits faster-than-light information transfer via quantum measurement alone, preserving causality and consistency with special relativity.
-  - **Physical basis:** Driven by *local randomness* $\rho_A = \rho_B = \frac{I}{2}$ for a EPR pair, each party’s *local* outcome statistics remain uniformly random regardless of what the other party does. Without classical communication conveying the other party's basis choice, a local outcome carries no exploitable signal.
+- <u>Perfect correlation</u>:
+  - **Mechanism:** Measured in the *same* basis, entangled outcomes always match; each side is still individually random, but knowing one instantly determines the other, for *any* shared real basis.
+  - **Application:** The resource behind Quantum Key Distribution (E91), where randomly-chosen matching bases yield a shared secret key.
+- <u>No-signaling</u>:
+  - **Mechanism:** Blocks faster-than-light signaling via measurement alone, preserving causality.
+  - **Origin:** Each party's local statistics ($\rho_A=\rho_B=\frac{I}{2}$) stay uniformly random regardless of the other's actions; without a classical message revealing the other's basis, no signal is exploitable.
 {: .prompt-statement}
