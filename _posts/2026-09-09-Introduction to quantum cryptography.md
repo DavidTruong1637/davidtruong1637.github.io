@@ -796,6 +796,5 @@ This constraint of quantum communication is formalised as the **no-communication
   - **Application:** Serves as the functional resource enabling practical protocols, including Quantum Key Distribution (E91), Quantum Teleportation, and Superdense Coding.
 - **No-Signaling Principle:**
   - **Mechanism:** Prohibits faster-than-light information transfer via quantum measurement alone, preserving causality and consistency with special relativity.
-  - **Physical Basis:** Driven by local randomness ($\rho_A = \frac{I}{2}$), ensuring that local outcomes remain uniformly random. Without classical communication, local data acts as pure noise, erasing any observable trace of the distant party's choice of basis or actions.
   - **Physical basis:** Driven by *local randomness* $\rho_A = \rho_B = \frac{I}{2}$ for a EPR pair, each party’s *local* outcome statistics remain uniformly random regardless of what the other party does. Without classical communication conveying the other party's basis choice, a local outcome carries no exploitable signal.
 {: .prompt-statement}
