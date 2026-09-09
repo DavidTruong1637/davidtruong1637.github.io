@@ -687,7 +687,7 @@ $$
 Hence, the mixed state 
 $\rho_{AB}$ is calculated as:
 
-<a id="(1)"></a>
+<span id="(1)"></span>
 
 $$
 \begin{aligned}
