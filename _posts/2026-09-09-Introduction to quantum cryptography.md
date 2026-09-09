@@ -196,7 +196,7 @@ $$i \in [k]$$ with probability $$\|\Pi_i |\psi\rangle\|^2$$
 - Quantum state collapses to 
 $$\frac{\Pi_i |\psi\rangle}{\|\Pi_i |\psi\rangle\|}$$
 
-> Check out [3.2.](#32-measure-outcome-for-mixed-state) for more details about projectors.
+> Check out [3.2.](#32-measurement-outcomes-for-mixed-states) for more details about projectors.
 
 
 ### 1.2.4. Putting it all together
@@ -608,7 +608,7 @@ $$which implies that $$\sum_{i = 1}^k |\psi_i\rangle\langle\psi_i| = I$$.
 {: .prompt-statement}
 
 
-## 3.2. Measuring outcomes for mixed state
+## 3.2. Measurement outcomes for mixed states
 
 <div align="center">
 <b>Given a mixed state represented by a density matrix $\rho$, how do we calculate the probability of a given measurement outcome?</b>
