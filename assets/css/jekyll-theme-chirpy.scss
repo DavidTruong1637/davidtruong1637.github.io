@@ -14,6 +14,14 @@
 
 /* append your custom style below */
 
+.math-left mjx-container[display="true"] {
+  text-align: left !important;
+}
+
+.math-center mjx-container[display="true"] {
+  text-align: center !important;
+}
+
 @mixin prompt-box($accent-color, $bg-alpha: 0.10, $border-alpha: 0.5) {
   border-width: 1px;
   border-style: solid;
@@ -40,6 +48,10 @@ blockquote.prompt-statement {
 
 blockquote.prompt-proof {
   @include prompt-box(#3fb950);
+}
+
+blockquote.prompt-example {
+  @include prompt-box(#6e40c9);
 }
 
 blockquote.prompt-notebox {
