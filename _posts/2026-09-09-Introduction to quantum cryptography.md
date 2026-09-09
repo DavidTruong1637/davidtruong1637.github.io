@@ -120,7 +120,7 @@ $\mathcal{B}$ be an orthonomal basis of a Hilbert space $\mathcal{H}$ and $|i\ra
 {: .prompt-notebox}
 
 
-### 1.2.2. Bases
+### 1.2.2. Base
 Two fundamental reference frames used to measure and represent qubit states are:
 
 - Computational basis:
