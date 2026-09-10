@@ -663,7 +663,6 @@ $$
 $$
 
 
-
 ## 3.3. Mixed states in bipartite systems
 
 Based on the fundamental definition, the density matrix of a statistical distribution of pure states is written as a sum of classical probabilities multiplied by the outer product of each pure state.
@@ -785,7 +784,7 @@ That is, any measurement on $A$ yields a uniform outcome distribution. This is k
 <b>So what does this mean?</b>
 </div>
 
-It means that although A and B share an entangled state, <u>A cannot extract any information about B's state or actions <b>without any classical communication</b></u>. Whichever basis A chooses to measure, her outcome is *completely random*. Furthermore, without a prior agreement on the measurement basis, A cannot be sure whether B uses the same basis, and so cannot confirm if their outcomes match. This lack of information prevents A from knowing B's measurement result with certainty, reducing her prediction to a random guess.
+It means that although $A$ and $B$ share an entangled state, <u>$A$ cannot extract any information about $B$'s state or actions <b>without any classical communication</b></u>. Whichever basis $A$ chooses to measure, her outcome is *completely random*. Furthermore, without a prior agreement on the measurement basis, $A$ cannot be sure whether $B$ uses the same basis, and so cannot confirm if their outcomes match. This lack of information prevents $A$ from knowing $B$'s measurement result with certainty, reducing her prediction to a random guess.
 
 This constraint of quantum communication is formalised as the 
 $$\textcolor{#0ea5e9}{\text{no-communication theorem}}$$ (also referred to as the $$\textcolor{#0ea5e9}{\text{no-signaling}}$$ principle). It preserves the principle of causality in quantum mechanics and ensures that information transfer does not violate Einstein's theory of special relativity: *"no signal or information can travel faster than the speed of light in a vacuum"*.
